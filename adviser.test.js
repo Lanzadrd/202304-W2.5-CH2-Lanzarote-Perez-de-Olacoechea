@@ -3,7 +3,7 @@ import { Adviser } from "./adviser.js";
 describe("Given a characters class", () => {
   describe("When we instantiate it", () => {
     test("We should have an object with the properties of the class", () => {
-      const adviser = new Adviser("Joffrey", "Baratheon", 35, "alive", "king");
+      const adviser = new Adviser("Joffrey", "Baratheon", 35, "king");
 
       expect(adviser).toHaveProperty("name", "Joffrey");
       expect(adviser).toHaveProperty("family", "Baratheon");

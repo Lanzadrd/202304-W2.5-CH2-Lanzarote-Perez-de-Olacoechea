@@ -3,14 +3,7 @@ import { Warrior } from "./warrior.js";
 describe("Given a characters class", () => {
   describe("When we instantiate it", () => {
     test("We should have an object with the properties of the class", () => {
-      const warrior = new Warrior(
-        "Joffrey",
-        "Baratheon",
-        35,
-        "alive",
-        "sword",
-        8
-      );
+      const warrior = new Warrior("Joffrey", "Baratheon", 35, "sword", 8);
 
       expect(warrior).toHaveProperty("name", "Joffrey");
       expect(warrior).toHaveProperty("family", "Baratheon");
